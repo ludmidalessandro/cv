@@ -1,0 +1,38 @@
+nav {
+    background-color: rgb(110, 57, 160);
+    color: white;
+}
+
+.fotocarnet {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.iconos {
+    width: 50px;
+    height: 50px;
+}
+
+.iconos:hover {
+    transform: translateY(5px);
+}
+
+.botondescarga {
+    background-color: transparent;
+    border: solid 2px black;
+}
+
+.botondescarga:hover {
+    background-color: rgb(110, 57, 160);
+    color: white;
+}
+
+.contacto {
+    background-color: rgb(188, 145, 229);
+}
+
+.principal {
+    background-image: url("../Imágenes/fondocv.jpg");
+    background-size: cover;
+}
