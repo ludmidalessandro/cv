@@ -1,0 +1,131 @@
+header {
+    background-color: rgb(110, 57, 160);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.fotocarnet {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.iconos {
+    width: 50px;
+    height: 50px;
+}
+
+.iconos:hover {
+    transform: translateY(5px);
+}
+
+.btn-descarga {
+    background-color: transparent;
+    border: solid 2px black;
+}
+
+.btn-descarga:hover {
+    background-color: rgb(110, 57, 160);
+    color: white;
+}
+
+.contacto {
+    background-color: rgb(188, 145, 229);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal {
+    background-image: url("../imagenes/fondocv.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 60px 120px;
+}
+
+.principal-title {
+    width: 100%;
+    text-align: justify;
+}
+
+.principal-title h1{
+    font-size: 48px;
+}
+
+/* Main */
+section {
+    padding: 60px 120px!important;
+}
+section:first-of-type {
+    padding: 0!important;
+}
+section p {
+    text-align: justify;
+}
+
+.section-banner {
+    height: 100vh;
+}
+
+.section-banner .row{
+    height: 100%;
+}
+
+.section-sobre-mi {
+    background-color: rgba(188, 145, 229, 0.2);
+}
+
+.section-formacion h2{
+    margin-bottom: 24px;
+}
+
+.section-experiencia {
+    background-color: rgba(188, 145, 229, 0.1);
+}
+
+.experience-container:first-of-type {
+    padding-top: 16px;
+}
+
+.experience-container {
+    padding-bottom: 40px;
+}
+
+.experience-container:last-of-type {
+    padding-bottom: 0;
+}
+
+.experience-container p {
+    margin-bottom: 8px;
+}
+
+.experience-container ul {
+    padding-left: 60px;
+}
+
+.progress-bar-container {
+    position: relative;
+}
+
+.progress-bar-container .progress{
+    position: relative;
+    top: 50%;
+}
+
+.progress-bar-container .progress-bar{
+    background-color: rgb(188, 145, 229);
+}
+
+.aptitudes-container:first-of-type {
+    padding-top: 20px!important;
+}
+
+.aptitudes-container {
+    padding: 10px 40px;
+}

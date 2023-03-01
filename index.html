@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="imagenes/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="styles\estilos.css" rel="stylesheet" type="text/css">
+
+    <title>Clara Ludmila D'Alessandro</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="imagenes/adn.png" alt="" style="width: 30px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" id="navbarNav-list">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" onclick="setActive(event); scrollToSection('sobre-mi')">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="setActive(event);scrollToSection('formacion')">Formación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="setActive(event);scrollToSection('experiencia')">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="setActive(event);scrollToSection('aptitudes')">Aptitudes e idiomas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-banner" class="section-banner container-fluid text-center">
+            <div class="row">
+                <div class="col-9 principal">
+                    <div class="principal-title">
+                        <h2>Hola, soy</h2>
+                        <h1>Ludmila D'Alessandro</h1>
+                        <h3><i><b>Te invito a conocerme</b></i></h3>
+                    </div>
+                </div>
+                <div class="col contacto">
+                    <img src="imagenes/fotocarnet.jpg" class="fotocarnet mt-3" />
+                    <h2> Clara Ludmila D'Alessandro</h2>
+                    <p class="text-center">Licenciada en Biotecnología</p>
+                    <div class="container-fluid">
+                        <a href="https://www.linkedin.com/in/clara-ludmila-d-alessandro-898866215/" target="_blank"><img src="imagenes/linkedin.png"
+                            class="iconos" alt=""></a>
+                        <a href="mailto:ludmila.dalessandro@mi.unc.edu.ar"><img src="imagenes/email.png" class="iconos"
+                                alt=""></a>
+                        <a href="https://wa.link/kd186h"><img src="imagenes/whatsapp.png" class="iconos" alt=""></a>
+                    </div>
+                   <button id="descargar-cv-btn" type="button" class="btn btn-descarga mt-3 ">Descargar CV</button>
+                </div>
+            </div>
+        </section>
+        <section id="section-sobre-mi" class="section-sobre-mi container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2><i>Sobre Mí</i></h2>
+                    <p>
+                        Actualmente me encuentro trabajando en Nanotransfer, una
+                        startup cuyo objetivo es el desarrollo de un sistema de
+                        administración ready-to-use, seguro, eficiente y rentable para
+                        aplicación en terapia génica.
+                        Con respecto a la docencia, cuento con experiencia como ayudante
+                        de alumno y además he dado clases particulares para alumnos en
+                        diferentes niveles académicos.
+                        Cuento con disponibilidad horaria por la tarde.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="section-formacion" class="section-formacion container-fluid">
+            <div class="row">
+                <h2><i>Formación</i></h2>
+                <div class="col-6">
+                    <h4>Educación</h4>
+                    <div class="row experience-container">
+                        <h6>LICENCIATURA EN BIOTECNOLOGÍA</h6>
+                        <p>
+                            Facultad de Ciencias Químicas<br>
+                            Universidad Nacional de Córdoba
+                        </p>
+                        <span><b>2017-2022</b></span>
+                        <ul>
+                            <li>Promedio sin aplazos: 8.60</li>
+                            <li>Promedio con aplazos: 8.60</li>
+                        </ul>
+                    </div>
+                    <div class="row experience-container">
+                        <h6>BACHILLER EN CIENCIAS NATURALES</h6>
+                        <p>Instituto Nuestra Señora de la Misericordia</p>
+                        <span><b>2011-2016</b></span>
+                        <ul>
+                            <li>Promedio: 9.56</li>
+                            <li>Portadora de Bandera Nacional</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h4>Cursos y Jornadas</h4>
+                    <div class="row experience-container">
+                        <h6>CONCEPTOS BÁSICOS DEL DIAGNÓSTICO GENÉTICO</h6>
+                        <p>Instituto Universitario Hospital Italiano de Buenos Aires</p>
+                        <span><b>2022</b></span>
+                    </div>
+                    <div class="row experience-container">
+                        <h6>CÓRDOBA I: DESAFÍO DE BIOTECNOLOGÍA</h6>
+                        <p>Ministerio de Ciencia y Tecnología de Córdoba</p>
+                        <span><b>2022</b></span>
+                    </div>
+                    <div class="row experience-container">
+                        <h6>INGLÉS ANUAL</h6>
+                        <p>Facultad de Lenguas - UNC</p>
+                        <span><b>2020-2022</b></span>
+                    </div>
+                    <div class="row experience-container">
+                        <h6>CURSO DE BIOIMPRESIÓN 3D</h6>
+                        <p>Life Si</p>
+                        <span><b>2021</b></span>
+                    </div>
+                    <div class="row experience-container">
+                        <h6>USO DUAL DEL CONOCIMIENTO</h6>
+                        <p>Facultad de Ciencias Químicas - UNC</p>
+                        <span><b>2021</b></span>
+                    </div>
+                    <div class="row experience-container">
+                        <h6>JORNADA CIENCIA Y TECNOLOGÍA EN RESTAURACIÓN</h6>
+                        <p>Facultad de Ciencias Químicas - UNC</p>
+                        <span><b>2021</b></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-experiencia" class="section-experiencia container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2><i>Experiencia</i></h2>
+                    <div class="row experience-container">
+                        <h6>ASISTENTE DE INVESTIGACIÓN BIÓLOGA CÉLULAR JR</h6>
+                        <p>Nanotransfer S.A.U.</p>
+                        <span><b>2022-Actualidad</b></span>
+                        <ul>
+                            <li>Síntesis de nanopartículas.</li>
+                            <li>Caracterización de nanopartículas.</li>
+                            <li>Purificación de ADN plasmídico.</li>
+                            <li>Transformación bacteriana.</li>
+                            <li>Electroforesis en gel.</li>
+                        </ul>
+                    </div>
+                    <div class="row experience-container">
+                        <h6>TESINISTA DE GRADO - PRÁCTICAS PROFESIONALES</h6>
+                        <p>Depto. Química Biológica- FCQ- UNC
+                            CIQUIBIC- CONICET</p>
+                        <span><b>2021-2022</b></span>
+                        <ul>
+                            <li>Edición génica: CRISPR/Cas 9.</li>
+                            <li>Transfección celular.</li>
+                            <li>Reacción en cadena de la polimerasa.</li>
+                            <li>Citometría de flujo.</li>
+                        </ul>
+                    </div>
+                    <div class="row experience-container">
+                        <h6>AYUDANTE DE ALUMNO - AD HONOREM</h6>
+                        <p>Depto. de Fisicoquímica- FCQ- UNC</p>
+                        <span><b>2021</b></span>
+                        <ul>
+                            <li>Laboratorio III:
+                                <ul>
+                                    <li>Reacciones óxido-reducción</li>
+                                    <li>Propiedades de los elementos</li>
+                                </ul>
+                            </li>
+                            <li>Química Analítica General:
+                                <ul>
+                                    <li>Valoraciones</li>
+                                    <li>Titulaciones</li>
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-aptitudes" class="section-aptitudes container-fluid">
+            <div class="row">
+                <h2><i>Aptitudes e Idiomas</i></h2>
+            </div>
+            <div class="row aptitudes-container">
+                <div class="col-4">
+                    <span>Español</span>
+                </div>
+                <div class="col progress-bar-container">
+                    <div class="progress" role="progressbar"  style="height: 5px">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row aptitudes-container">
+                <div class="col-4">
+                    <span>Inglés</span>
+                </div>
+                <div class="col progress-bar-container">
+                    <div class="progress" role="progressbar"  style="height: 5px">
+                        <div class="progress-bar" style="width: 55%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row aptitudes-container">
+                <div class="col-4">
+                    <span>Italiano</span>
+                </div>
+                <div class="col progress-bar-container">
+                    <div class="progress" role="progressbar"  style="height: 5px">
+                        <div class="progress-bar" style="width: 10%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row aptitudes-container">
+                <div class="col progress-bar-container">
+                    <div class="progress" role="progressbar"  style="height: 1px">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row aptitudes-container">
+                <div class="col-4">
+                    <span>Trabajo en Equipo</span>
+                </div>
+                <div class="col progress-bar-container">
+                    <div class="progress" role="progressbar"  style="height: 5px">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row aptitudes-container">
+                <div class="col-4">
+                    <span>Pensamiento Crítico</span>
+                </div>
+                <div class="col progress-bar-container">
+                    <div class="progress" role="progressbar"  style="height: 5px">
+                        <div class="progress-bar" style="width: 76%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row aptitudes-container">
+                <div class="col-4">
+                    <span>Adaptabilidad</span>
+                </div>
+                <div class="col progress-bar-container">
+                    <div class="progress" role="progressbar"  style="height: 5px">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row aptitudes-container">
+                <div class="col-4">
+                    <span>Proactividad</span>
+                </div>
+                <div class="col progress-bar-container">
+                    <div class="progress" role="progressbar"  style="height: 5px">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row aptitudes-container">
+                <div class="col-4">
+                    <span>Capacidad de Organización</span>
+                </div>
+                <div class="col progress-bar-container">
+                    <div class="progress" role="progressbar"  style="height: 5px">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
